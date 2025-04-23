@@ -69,9 +69,7 @@ export default function Home() {
             href="./"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <span className="self-center text-xl font-semibold whitespace-nowrap text-white">
-              Audio<span className="text-blue-500">Resume</span>
-            </span>
+            <img className="rounded-lg w-10" src="logo.png" alt="image description"/>
           </a>
         </div>
       </nav>
