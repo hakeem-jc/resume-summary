@@ -69,14 +69,14 @@ export default function Home() {
             href="./"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-              Resume <span className="text-blue-500">Summary</span>
+            <span className="self-center text-xl font-semibold whitespace-nowrap text-white">
+              Audio<span className="text-blue-500">Resume</span>
             </span>
           </a>
         </div>
       </nav>
       
-      <div className="w-11/12 max-w-md p-6 bg-[#181818] rounded-2xl shadow-lg">
+      <div className="w-11/12 max-w-sm p-6 bg-[#181818] rounded-2xl shadow-lg">
         <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 pb-4">
           <a href="#">
             <img className="rounded-lg" src="bg.png" alt="image description"/>
