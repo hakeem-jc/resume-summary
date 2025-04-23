@@ -63,6 +63,18 @@ export default function Home() {
 
   return (
     <main className="flex items-center justify-center h-screen bg-[#212121] text-white">
+      <nav className="bg-[#181818] fixed w-full z-20 top-0 start-0 border-b border-gray-600">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between  p-4">
+          <a
+            href="./"
+            className="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
+              Resume <span className="text-blue-500">Summary</span>
+            </span>
+          </a>
+        </div>
+      </nav>
       <div className="w-11/12 max-w-md p-6 bg-[#181818] rounded-2xl shadow-lg">
         <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 pb-4">
           <a href="#">
