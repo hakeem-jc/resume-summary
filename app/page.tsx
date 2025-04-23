@@ -1,5 +1,4 @@
 'use client';
-
 import { useState, useRef, useEffect } from 'react';
 
 export default function Home() {
@@ -17,13 +16,19 @@ export default function Home() {
       setCurrentTime(audio.currentTime);
     };
     const updateTime = () => setCurrentTime(audio.currentTime);
+    const handleEnded = () => {
+      setIsPlaying(false);
+      audio.currentTime = 0;
+    };
 
     audio.addEventListener('loadeddata', setAudioData);
     audio.addEventListener('timeupdate', updateTime);
+    audio.addEventListener('ended', handleEnded);
 
     return () => {
       audio.removeEventListener('loadeddata', setAudioData);
       audio.removeEventListener('timeupdate', updateTime);
+      audio.removeEventListener('ended', handleEnded);
     };
   }, []);
 
@@ -57,8 +62,8 @@ export default function Home() {
   };
 
   return (
-    <main className="flex items-center justify-center h-screen bg-gray-900 text-white">
-      <div className="w-full max-w-md p-6 bg-gray-800 rounded-2xl shadow-lg">
+    <main className="flex items-center justify-center h-screen bg-[#212121] text-white">
+      <div className="w-full max-w-md p-6 bg-[#181818] rounded-2xl shadow-lg">
         <h1 className="text-xl font-semibold text-center mb-4">Resume Summary</h1>
         <audio
           ref={audioRef}
@@ -68,7 +73,7 @@ export default function Home() {
         <div className="flex items-center justify-center space-x-4 mb-4">
           <button
             onClick={togglePlay}
-            className="p-3 bg-gray-700 rounded-full hover:bg-gray-600 focus:outline-none"
+            className="p-3 bg-[#212121] rounded-full hover:bg-blue-500 focus:outline-none cursor-pointer"
           >
             {isPlaying ? (
               <svg
@@ -119,20 +124,3 @@ export default function Home() {
     </main>
   );
 }
-
-// tailwind.config.ts
-// import type { Config } from 'tailwindcss';
-
-// const config: Config = {
-//   darkMode: 'class',
-//   content: [
-//     './app/**/*.{js,ts,jsx,tsx}',
-//     './components/**/*.{js,ts,jsx,tsx}',
-//   ],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// };
-
-// export default config;
