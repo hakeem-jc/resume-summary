@@ -75,10 +75,8 @@ export default function Home() {
       </nav>
       
       <div className="w-11/12 max-w-sm p-6 bg-[#181818] rounded-2xl shadow-lg">
-        <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 pb-4">
-          <a href="#">
-            <img className="rounded-lg" src="bg.png" alt="image description"/>
-          </a>
+        <figure className="relative max-w-sm pb-4">
+          <img className="rounded-lg opacity-50" src="bg.png" alt="image description"/>
           <figcaption className="absolute px-4 text-lg text-white bottom-6">
               <p>Beyond the Code: Unpacking a Tech Career's Real-World Impact</p>
           </figcaption>
