@@ -18,7 +18,7 @@ export default function Home() {
     const updateTime = () => setCurrentTime(audio.currentTime);
     const handleEnded = () => {
       setIsPlaying(false);
-      audio.currentTime = 0;
+      if (audio) audio.currentTime = 0;
     };
 
     audio.addEventListener('loadeddata', setAudioData);
@@ -63,7 +63,7 @@ export default function Home() {
 
   return (
     <main className="flex items-center justify-center h-screen bg-[#212121] text-white">
-      <div className="w-full max-w-md p-6 bg-[#181818] rounded-2xl shadow-lg">
+      <div className="w-11/12 max-w-md p-6 bg-[#181818] rounded-2xl shadow-lg">
         <h1 className="text-xl font-semibold text-center mb-4">Resume Summary</h1>
         <audio
           ref={audioRef}
