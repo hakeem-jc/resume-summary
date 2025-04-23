@@ -75,6 +75,7 @@ export default function Home() {
           </a>
         </div>
       </nav>
+      
       <div className="w-11/12 max-w-md p-6 bg-[#181818] rounded-2xl shadow-lg">
         <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 pb-4">
           <a href="#">
@@ -141,6 +142,10 @@ export default function Home() {
           <span className="text-sm">{formatTime(duration)}</span>
         </div>
       </div>
+
+      <footer className="bg-[#181818] fixed bottom-0 w-full border-t border-gray-600 p-4 text-center">
+        <p className="text-sm text-gray-400">© 2025 Hakeem Clarke</p>
+      </footer>
     </main>
   );
 }
