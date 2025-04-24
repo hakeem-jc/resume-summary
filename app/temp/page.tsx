@@ -62,7 +62,7 @@ export default function Temp() {
   };
 
   return (
-    <main className="flex flex-col h-screen items-center justify-center overflow-hidden bg-[#212121] text-white">
+    <main className="flex flex-col min-h-dvh items-center justify-center overflow-hidden bg-[#212121] text-white">
       {/* <nav className="bg-[#181818] w-full z-20 border-b border-gray-600">
         <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4">
           <a
