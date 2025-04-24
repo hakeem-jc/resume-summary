@@ -62,20 +62,8 @@ export default function Home() {
   };
 
   return (
-    <main className="flex flex-col h-screen overflow-hidden bg-[#212121] text-white">
-      <nav className="bg-[#181818] w-full z-20 border-b border-gray-600">
-        <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4">
-          <a
-            href="./"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <img className="rounded-lg w-10" src="logo.png" alt="logo" />
-          </a>
-        </div>
-      </nav>
-  
-      <div className="flex-grow flex items-center justify-center px-4">
-        <div className="w-full max-w-sm p-6 bg-[#181818] rounded-2xl shadow-lg">
+    <main className="flex flex-col min-h-dvh items-center justify-center overflow-hidden bg-[#212121] text-white">
+        <div className="flex flex-col gap-4 w-full max-w-sm p-6">
           <figure className="relative w-full pb-4">
             <img
               className="rounded-lg opacity-50 w-full"
@@ -87,7 +75,7 @@ export default function Home() {
             </figcaption>
           </figure>
   
-          <h1 className="text-xl font-semibold text-center mb-4">
+          <h1 className="text-lg font-semibold text-center">
             Resume Summary: Hakeem Clarke
           </h1>
   
@@ -100,7 +88,7 @@ export default function Home() {
           <div className="flex items-center justify-center space-x-4 mb-4">
             <button
               onClick={togglePlay}
-              className="p-3 bg-[#212121] rounded-full hover:bg-blue-500 focus:outline-none"
+              className="p-3 bg-[#181818] cursor-pointer rounded-full hover:bg-blue-500 focus:outline-none"
             >
               {isPlaying ? (
                 // pause icon
@@ -151,11 +139,6 @@ export default function Home() {
             <span className="text-sm">{formatTime(duration)}</span>
           </div>
         </div>
-      </div>
-  
-      <footer className="bg-[#181818] w-full border-t border-gray-600 p-4 text-center">
-        <p className="text-sm text-gray-400">© 2025 Hakeem Clarke</p>
-      </footer>
     </main>
   );  
 }
