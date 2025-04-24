@@ -75,7 +75,7 @@ export default function Temp() {
       </nav> */}
   
       {/* <div className="flex-grow flex items-center justify-center px-4"> */}
-        <div className="w-full max-w-sm p-6">
+        <div className="flex flex-col gap-4 w-full max-w-sm p-6">
           <figure className="relative w-full pb-4">
             <img
               className="rounded-lg opacity-50 w-full"
@@ -87,7 +87,7 @@ export default function Temp() {
             </figcaption>
           </figure>
   
-          <h1 className="text-xl font-semibold text-center mb-4">
+          <h1 className="text-lg font-semibold text-center">
             Resume Summary: Hakeem Clarke
           </h1>
   
