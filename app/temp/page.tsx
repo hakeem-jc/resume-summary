@@ -63,18 +63,6 @@ export default function Temp() {
 
   return (
     <main className="flex flex-col min-h-dvh items-center justify-center overflow-hidden bg-[#212121] text-white">
-      {/* <nav className="bg-[#181818] w-full z-20 border-b border-gray-600">
-        <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4">
-          <a
-            href="./"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <img className="rounded-lg w-10" src="logo.png" alt="logo" />
-          </a>
-        </div>
-      </nav> */}
-  
-      {/* <div className="flex-grow flex items-center justify-center px-4"> */}
         <div className="flex flex-col gap-4 w-full max-w-sm p-6">
           <figure className="relative w-full pb-4">
             <img
@@ -151,11 +139,6 @@ export default function Temp() {
             <span className="text-sm">{formatTime(duration)}</span>
           </div>
         </div>
-      {/* </div> */}
-  
-      {/* <footer className="bg-[#181818] w-full border-t border-gray-600 p-4 text-center">
-        <p className="text-sm text-gray-400">© 2025 Hakeem Clarke</p>
-      </footer> */}
     </main>
   );  
 }
